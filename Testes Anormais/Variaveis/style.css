@@ -1,0 +1,10 @@
+:root{
+    --cor1: blue;
+    --cor2: red;
+    --cor3: yellow;
+    --cor3: green
+}
+
+h1{
+    color: var(--cor1);
+}

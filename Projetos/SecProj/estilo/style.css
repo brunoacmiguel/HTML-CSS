@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Exo2';
+    src: url("Exo2-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sacramento';
+    src: url('Sacramento-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #3E3A61;
+    margin: 0px;
+}
+
+h1, h2{
+    font-family: 'Exo2', serif, Times;
+}
+
+header{
+    background-image: linear-gradient(to right, #2B2B33, #2C2A42 );
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+header > h1, header > h2{
+    margin: 0px;
+    color: rgb(146, 146, 146);
+}
+
+header > h1{
+    padding: 50px 0px;
+    font-size: 25px;
+}
+
+header > h2{
+    font-size: 20px;
+}
+
+nav{
+    background-image: linear-gradient(to right, #2B2B33, #2C2A42 );
+    margin: 0px;
+}
+nav > span{
+    padding: 15px;
+    color: rgb(146, 146, 146);
+}
+
+main{
+    margin: 0px 150px;
+    background-color: white;
+}
+article > h1{
+    text-align: justify;
+    font-size: 25px;
+    margin: 0px;
+    background-image: linear-gradient(to right, rgb(0, 183, 255)
+    , white);
+    width: 25%;
+}
+article > p{
+    text-align: justify;
+    margin: 5px;
+    font-size: 20px;
+    padding: 20px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+aside{
+    margin: 20px 150px;
+}
+div#bmb{
+    background-color: #281C8E;
+    border-radius: 10px 10px 0px 0px;
+    
+    padding: 10px;
+}
+
+div#bmb > h1{
+    margin: 0px;
+    font-size: 15px;
+    color: white;
+}
+
+div#mcm{
+    background-color: #968fda;
+    height: 200px;
+    border-radius: 0px 0px 10px 10px;
+}
+.lll{
+    display: inline-block;
+}
+div#ll{
+    padding-right: 50%;
+}
+footer{
+    background-color: #2C2A55;
+    margin: 0px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+footer > h1{
+    margin: 0px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Sacramento', monospace;
+}
