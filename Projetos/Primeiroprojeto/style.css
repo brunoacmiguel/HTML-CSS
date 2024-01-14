@@ -75,7 +75,7 @@ nav p{
 }
 nav p > a{
     text-decoration: none;
-    color: white;
+    color: rgb(173, 171, 171);
     padding: 10px 20px 10px 10px;
     
 }
