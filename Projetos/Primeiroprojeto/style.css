@@ -74,6 +74,10 @@ nav > a{
     text-decoration: none;
     color: white;
     padding: 10px 20px 10px 10px;
+    
+}
+
+nav > a#bx{
     margin-bottom: 20px;
 }
 
