@@ -1,0 +1,71 @@
+Oque aprendemos nesse capítulo:
+=======================
+
+background-image: url();
+
+A tag acima faz com que quando inserida dentro de uma estilização de uma caixa ele insere a imagem escolhida através de uma url externa ou interna.
+
+=========================
+
+Também conheci a medida vh, usada para calcular a porcentagem da tela que o usuário visualiza.
+
+=========================
+
+background-size: ;
+
+Essa tag é utilizada para regular o tamanho de uma imagem de fundo ou do próprio fundo: ;
+
+cover: Cobre a tela inteira ampliando ou diminuindo a imagem sem tirar o foco dela
+
+contain: É o padrão, duplica a imagem deixando a da mesma forma
+
+=========================
+
+background-repeat: ;
+
+repeat-y: Usada para repetir o fundo para baixo
+
+repeat-x: Usada para repetir o fundo para os lados
+
+no-repeat: Tag padrão, como o próprio nome diz usada para não repetir o fundo
+
+==========================
+
+background-position: ;
+
+Usado para colocar a imagem de fundo em determinada área:
+
+center-top
+center-bottom
+center-center
+
+left-top
+left-center
+left-bottom
+
+right-top
+right-center
+right-bottom
+
+============================
+
+background-attachment: ;
+
+fixed: A imagem de fundo é fixada, ou seja, ela não muda quando o site é scrolado
+
+============================
+
+background; ;
+
+A shorthand do background pode ser feita da seguinte forma:
+
+background: color image position repeat [size] attachment;
+
+color: A cor do fundo
+image: A imagem de fundo
+position: A posição do fundo
+repeat: O modo de como o fundo vai se repetir
+
+size: O size está incluido na sintaxe da shorthand, entretanto ele não funciona.
+
+attachment: Forma com que o fundo é scrolado
