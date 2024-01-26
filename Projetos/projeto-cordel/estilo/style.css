@@ -1,3 +1,7 @@
+/* 
+
+CSS original
+
 @font-face {
     font-family: 'Passion';
     src: url('fontes/PassionOne-Regular.ttf') format('truetype');
@@ -34,6 +38,7 @@
 
 
 
+
 header{
     background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
@@ -41,6 +46,7 @@ header{
 }
 
 header > h1{
+    font-variant: small-caps;
     color: white;
     font-family: var(--PassionOne);
     text-align: center;
@@ -73,7 +79,7 @@ main{
 
 article p{
     font-family: var(--Srr);
-    font-size: 45px;
+    font-size: clamp(20px, 35px, 45px);
     font-weight: bolder;
     margin: 0px 0px 20px 0px;
 }
@@ -163,6 +169,185 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
+*/
+
+
+/*CSS "corrigido"*/
+@font-face {
+    font-family: 'Passion';
+    src: url('fontes/PassionOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Srr';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Courguette';
+    src: url('../fontes/Courgette-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --PassionOne: 'Passion', cursive;
+    --Srr: 'Srr', cursive;
+    --Courguette: 'Courguette', monospaced;
+    --Padrao: 'Arial', 'Heveltica', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(223, 223, 223);
+    min-height: 100%;
+}
+
+
+
+
+header{
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 150px;
+}
+
+header > h1{
+    font-variant: small-caps;
+    color: white;
+    font-family: var(--PassionOne);
+    text-align: center;
+    font-size: 10vw;
+    padding: 50px 0px 20px 0px;
+}
+
+header > p{
+    font-family: var(--srr);
+    color: white;
+    text-align: center;
+    padding: 0px 0px 50px 0px;
+}
+
+header p > a{
+    color: white;
+    text-decoration: none;  
+}
+
+header p > a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+main{
+    max-width: 100%;
+}
+
+article p{
+    font-family: var(--Srr);
+    font-size: 3vw;
+    font-weight: bolder;
+    margin: 0px 0px 20px 0px;
+}
+
+section#pad{
+    margin-bottom: 300px;
+}
+
+section#pad article{
+    margin: 0px 0px 15px 40px;
+}
+
+section#primeiraimagem{
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    padding: 80px 0px 80px 0px;
+    margin: 0px 0px 300px 0px;
+}
+
+section#primeiraimagem article{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 332px;
+    color: rgb(161, 161, 161);
+    padding: 30px 0px 30px 10px;
+    border: black solid 1px;
+    margin: 0px 0px 0px 10px;
+}
+
+div.esp{
+    padding: 50px;
+}
+
+section#pad2{
+    padding-left: 40px;
+    margin-bottom: 300px;
+}
+
+section.segimg{
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0px 80px 0px;
+    margin: 0px 0px 300px 0px;
+}
+
+section.segimg > article{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 398px;
+    color: white;
+    padding: 30px 0px 30px 10px;
+}
+
+section#pad3 > article{
+    padding-left: 40px;
+    margin-bottom: 300px;
+}
+
+
+
+
+
+footer{
+    position: relative;
+    background-color: black;
+    height: 80px;
+    padding: 10px;
+}
+
+footer p{
+    font-family: var(--Padrao);
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
 
 
 
