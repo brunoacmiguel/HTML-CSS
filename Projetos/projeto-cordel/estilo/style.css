@@ -253,7 +253,7 @@ main{
 
 article p{
     font-family: var(--Srr);
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: bolder;
     margin: 0px 0px 20px 0px;
 }
