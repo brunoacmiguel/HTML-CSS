@@ -1,0 +1,35 @@
+Tabelas são usadas para representar dados, não para formar a estrutura do site.
+
+
+                    HTML
+==============================================
+
+<table></table>: Usada para criar uma tabela em html
+
+<tr></tr> = Usada para criar as linhas das tabelas 
+
+<th></th> = usada para criar o título da tabela
+
+<td></td> = Usada para colocar os dados da tabelas
+
+==============================================
+
+                    CSS
+
+==============================================
+
+border-colapse: ;
+
+colapse: Sem espaço entre as células
+
+separate: Espaço entre as células
+
+=======================
+
+vertical-allign: ; Alinha verticalmente
+
+top: Cima
+
+middle: Meio
+
+bottom; Baixo

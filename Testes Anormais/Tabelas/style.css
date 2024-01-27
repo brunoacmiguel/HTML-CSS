@@ -1,0 +1,29 @@
+h1{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+table{
+    border: black solid 1px;
+    border-collapse: collapse;
+    margin: auto;
+    border-radius: 50px;
+}
+
+th, td{
+    border: black solid 1px;
+    border-collapse: collapse;
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+tr#título{
+    background-color: rgba(85, 85, 85, 0.363);
+    border-radius: 20px;
+}
+
+tr.normal{
+    background-color: rgb(100, 100, 255);
+}
