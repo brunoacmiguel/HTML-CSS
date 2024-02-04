@@ -1,0 +1,25 @@
+table{
+    width: 500px;
+    text-align: center;
+}
+
+thead, tfoot{
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-size: 25px;
+}
+
+thead th, tfoot th{
+    padding: 20px;
+}
+
+tr, td{
+    padding: 10px;
+    border: black solid 1px;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
