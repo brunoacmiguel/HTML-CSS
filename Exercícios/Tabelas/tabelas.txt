@@ -34,4 +34,53 @@ middle: Meio
 
 bottom: Baixo
 
+==============================================
+
+                        COLGROUP
+
+Usado para fazer com que colunas tenhas configuraçoẽs especificas:
+
+<colgroup>
+    <col class="amarelo">
+    <col class="vermelho">
+<colgroup>
+<tr>
+    <th>Produto</th>
+    <th>Preço</th>
+<tr>
+
+Toda a coluna abaixo do th produtos teria a cor amarela, e toda a coluna abaixo do th preço teria cor vermelha
+
+<colgroup>
+    <col class="amarelo" span="2">
+<colgroup>
+<tr>
+    <th>Produto</th>
+    <th>Preço</th>
+<tr>
+
+As duas colunas teriam a cor amarelo, pois a classe amarelo vale para as 2 colunas
+
 =======================
+
+            CSS
+
+Claro que para que as colunas ganhem cores precisam de um ajuste css:
+
+col.amarelo{
+    background-color: yellow;
+}
+
+É sempre a tag <col> que é usada em css e não a tag <colgroup>
+
+==============================================
+
+                                Tabelas responsivas
+
+Para deixar uma tabela responsiva, basta envelopa-la em uma div e logo após colocar a tag overflow-x: auto; em css:
+
+div#container{
+    overflow-x: auto;
+}
+
+==============================================
