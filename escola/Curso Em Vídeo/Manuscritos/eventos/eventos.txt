@@ -1,0 +1,32 @@
+Imagine a situação, você está criando aquele site bonitinho, detalhadinho, eis que então lhe surge um problema, como eu vou executar um código quando eu quiser sem que ele carregue automaticamente? Bem, isso é simples através das funções você pode fazer isso.
+
+As funções são blocos de códigos que são acionadas a partir de um evento. Vamos supor que eu tenha um botão no meu site, que quando acionado ele faça com que o fundo fique azul
+
+EXEMPLO
+
+<button onclick="multa()">Clique</button>
+<script>
+    function multa(){
+        document.body.style.background = "blue";
+    }
+</script>
+
+O onclick="multa()" é um termo usado para acionar um evento, ao clicar no botão esse evento e iniciado e aciona a função posteriormente.
+
+
+
+addEventListener();
+
+
+
+A uma outra forma de executar uma função, que é através do addEventListener(), essa função já configura o evento fora do html e dentro do javascript.
+
+EXEMPLO
+
+<button id="clica">Clica</button>
+<script>
+    clica.addEventListener("click", fundo);
+    function fundo(){
+        document.body.style.background = "blue";
+    }
+</script>

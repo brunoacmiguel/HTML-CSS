@@ -1,0 +1,45 @@
+                        IFRAMES
+==============================================================
+
+Tamanho padrão:
+
+Um iframe tem por padrão 300px de largura e 150px de altura
+
+Para personalizar, basta usar a tag width ou height numa tag style, ou dentro do próprio iframe, mas lembre-se, o css sempre vai ter prioridade
+
+=================================
+
+Ex:
+
+iframe{
+    width: 500px;
+    heigth: 200px;
+}
+
+<iframe src="#" frameborder="0" width="700" height="300">
+
+=================================
+
+Nesse caso a altura vai ser 200px e a largura 500px.
+
+==============================================================
+
+Inconvenientes dos IFRAMES
+
+Os iframes possuem alguns problemas que por sua vez podem afetar a experiência do usuário.
+Esses problemas se dão pela indexação do google ou outro navegador, que as vezes não
+reconhece o iframe na maioria das vezes, fazendo com que caso tenha algo muito importante no seu
+site que possa ajudar na indexação dentro de um iframe pode prejudicar isso.
+
+Também temos que a acessibilidade dele para pessoas com deficiência como cegos por exemplo
+não consiga usalos a partir de um leitor de tela, fazendo com que seja bugado. Além disso os iframes
+as vezes podem possibilitar que pessoas consigam roubar informações caso dentro do seu iframe tiver um
+site que foi invadido.
+
+Mas os iframes são sim úteis, só não use exageradamente.
+
+Como deixalos mais seguros?
+
+Bem, para deixalos mais seguros basta colocar a tag sandbox"sandbox" dentro do iframe, isso faz com que qualquer coisa sque aquele site fizer como formulários,  scripts sejam bloqueados.
+
+==============================================================

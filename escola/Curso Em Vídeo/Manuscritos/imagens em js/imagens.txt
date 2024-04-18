@@ -1,0 +1,29 @@
+Bem, como eu posso colocar uma imagem dentro de um código java script?
+    
+A forma mais fácil de fazer isso é pela tag createElement(), mas claro não é só socar a tag e esperar que tudo funcione,
+
+já que ela é só uma imagem vazia, ai você tem que definir os atributos com a tag setAttribute(), que faz com que você pode definir id, classe, nome etc etc. Mas nesse caso podemos utilizar o src para buscar a imagem.
+
+EXEMPLO
+
+let img = document.createElement("img); //Cria o elemento e armazena em uma variável
+
+ img.setAttribute("id", "foto"); //Define o id da imagem como foto
+
+ img.setAttribute('src', 'imagens/paisagem.jpg'); //Adiciona a foto "paisagem.jpg" na tag imagem
+
+
+
+ Só que ainda sim não vai da para exibi-la, já que colocamos apenas os dado e não a mostramos.
+
+ Vamos supor que em nosso javascript temos uma variável chamada "exibir", essa variável está com os dados de uma div.
+
+ Para mostrarmos a imagem dentro dessa div basta usarmos a tag appendChild().
+
+ EXEMPLO
+
+let exibir = document.getElementById("def");
+let img = document.createElement("img");
+img.setAttribute("id", "foto");
+img.setAttribute('src', 'imagens/paisagem.jpg');
+exibir.appendChild("img);

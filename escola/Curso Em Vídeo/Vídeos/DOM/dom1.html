@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        h1{
+            text-align: center;
+            color: lightblue;
+        }
+        h2{
+            text-indent: 10px;
+            color: lightblue;
+        }
+        p{
+            text-indent: 5px;
+            color: rgb(203, 225, 255);
+        }
+        div#add{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: 10px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SIte massa</h1>
+    <h2>O porque desse site é massa?</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus numquam, id a sapiente quis recusandae libero. Numquam vitae suscipit repellendus aperiam. Omnis, magni iure alias aut cumque quibusdam debitis nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus blanditiis repellat quaerat alias ad explicabo rem quod, soluta architecto nesciunt illum et molestiae vel porro accusantium totam quo adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique voluptas cumque obcaecati vel expedita nam quis laboriosam, molestias ea. Doloremque impedit repudiandae quos. Expedita nulla eos dolores cum nihil. 0</p>
+    <p id="ddd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illum praesentium possimus provident doloremque ad voluptate quam omnis sequi quibusdam repellat odio asperiores modi, nostrum magni, quaerat labore laudantium quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vero temporibus provident aliquam reprehenderit deserunt quo accusantium facere eligendi tempora porro aspernatur animi, rerum earum non totam natus illo nam. 1</p>
+    <div id="add" >Clique</div>
+    <script>
+      let a = window.document.querySelector("div#add");
+      a.addEventListener('click', Clique); //Configura uma função
+      a.addEventListener('dblclick', dbc);
+      alert(a.innerHTML);
+      function Clique(){
+        a.innerHTML = "Clicou";
+        a.style.background = "red";
+      }
+      function dbc(){
+        a.innerHTML = "Clicou 2 vezes";
+        a.style.background = "yellow";
+      }
+    </script>
+</body>
+</html>

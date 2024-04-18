@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="aaa"  placeholder="nota">
+    <input type="text" id="bbb" placeholder="pessoa">
+    <button onclick="doisf()">Armazenar</button>
+    <button onclick="tst()">Mostrar</button>
+    <script>
+        let vetst = [];
+        let vetst2 = [];
+        let veps = [];
+        function doisf(){
+            let pessoa = document.getElementById("bbb")
+            let nota = document.getElementById("aaa").value; // Pegar o valor do elemento com o ID "aaa"a
+            vetst.push(nota);
+            vetst2.push(nota);
+            veps.push(pessoa);
+            alert(vetst);
+        }
+
+        function tst(){
+            vetst2.sort(function(a, b) {
+            return a - b;
+            });;
+            alert(vetst2);
+            alert(vetst);
+            for(let i = 0; i <= vetst.length - 1; i++){
+                let n2 = vetst2.indexOf(vetst[i]);
+                alert(vetst[i]);
+                alert(n2);
+            }
+        }
+        
+    </script>
+</body>
+</html>

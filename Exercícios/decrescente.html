@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Digite o nome do concorrente" id="comp">
+    <input type="text" placeholder="digite um número de notas" id="nota">
+    <button onclick="competidor()">Compeetidorr</button>
+    <button onclick="nota()">Nota</button>
+    <button onclick="mostrar()"></button>
+    <h3 id="exibir"></h3>
+    <script>
+        let msg = "";
+        let vetnota = [];
+        let vetcompet = [];
+        let vetcompet2 = [];
+        let vetnota2 = [];
+        function competidor(){
+            let competidor = document.getElementById("comp").value;
+            vetcompet.push(competidor);
+        }
+
+        function nota(){
+            let nota = Number(document.getElementById("nota").value);
+            vetnota.push(nota);
+            alert(vetnota);
+            vetnota.sort();
+            vetnota2.push(nota);
+        }
+
+        function mostrar(){
+            if(vetnota.length == vetcompet.length){
+                for(let i = 0; i <= vetnota.length - 1; i++){
+                    let n2 = vetnota.indexOf(vetnota2[i]);
+                    msg += i+1 + "°: " + vetcompet[i] + ": "; + vetnota[n2] + "<br>";
+                    alert(n2);
+                    document.getElementById("exibir").innerHTML = msg + "<br>";
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>

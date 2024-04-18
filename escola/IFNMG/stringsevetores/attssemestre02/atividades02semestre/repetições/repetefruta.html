@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="fruta" placeholder="Digite a fruta">
+    <input type="text" id="n" placeholder="Quantidade">
+    <button onclick="fruta()">Clique</button>
+    <h3 id="mostrar"></h3>
+    <script>
+        function fruta(){
+        let mostrar = "";
+        
+        let fruta = document.getElementById("fruta").value;
+        
+        let n = document.getElementById("n").value;
+        parseInt(n);
+        for(let i = 1; i <= n; i++){
+            mostrar += fruta + " * ";
+            
+            document.getElementById("mostrar").innerHTML = mostrar;
+        }
+        }
+        
+    </script>
+</body>
+</html>

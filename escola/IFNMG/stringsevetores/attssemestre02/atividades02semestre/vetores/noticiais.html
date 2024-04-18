@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="noticia()">Noticia</button>
+    <button onclick="mostrar()">Mostrar notícia</button>
+    <h2 id="mostrar1"></h2>
+    <script>
+        let mostrar1 = "";
+        let noticia2 = []
+        let cont = 0;
+        function noticia(){
+            let noticia = prompt("Digite a notícia");
+            noticia2.unshift(noticia); 
+        }
+        function mostrar(){
+            mostrar1 = "";
+            if(cont == 0){
+                for(let i = 0; i < 1; i++){
+                    mostrar1 += noticia2[i] + "<br>";
+                    document.getElementById("mostrar1").innerHTML = mostrar1;
+                    cont += 1;
+                }
+            }
+            else{
+                for(let i = 0; i < 2; i++){
+                    mostrar1 += noticia2[i] + "<br>";
+                    document.getElementById("mostrar1").innerHTML = mostrar1;
+                }
+            }
+           
+        }
+
+    </script>
+</body>
+</html>

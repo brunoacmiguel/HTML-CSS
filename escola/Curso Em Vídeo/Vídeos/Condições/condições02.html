@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="vel" placeholder="Digite sus velocidade: ">
+    <button  id="bt">Verificar</button>
+    <div id="exibir"></div>
+    <script>
+        let btno = window.document.getElementById("bt");
+        btno.addEventListener("click", multa)
+        function multa(){   
+            let vel = window.document.querySelector("input#vel").value;
+            let div = window.document.querySelector("div#exibir");
+            alert(vel);
+            if(vel > 60){
+                div.style.color = "red";
+                div.innerHTML = "<p>Você passou acima da velocidade permitida!";
+            }
+            else{
+                div.style.color = "blue";
+                div.innerHTML = "<p>Você está dentro da velocidade permitida!"
+            }
+        }
+    </script>
+</body>
+</html>

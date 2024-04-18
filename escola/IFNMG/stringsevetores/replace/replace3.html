@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frase = prompt("Digite sua frase: ").toUpperCase();
+        let sub = prompt("DIgite a palavra a ser substituida:").toUpperCase();
+        let sub2 = prompt("Digite a substituição: ").toUpperCase();
+        let replex = new RegExp(sub, "g");
+        let repla = frase.replace(replex, sub2);
+        alert(repla);
+    </script>
+</body>
+</html>

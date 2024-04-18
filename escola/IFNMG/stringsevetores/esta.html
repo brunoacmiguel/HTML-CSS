@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="puxar" placeholder="Digite números separados por espaço: ">
+    <button onclick="armazenar()">Armazenar</button>
+    <button onclick="verificar()">Verificar</button>
+    <script>
+        let vts = [];
+        let vdd = 0;
+        let qnt = 0;
+        function armazenar(){
+            let vt = document.getElementById("puxar").value;
+            alert("teste")
+            vts = vt.split(" ").map(Number);
+            alert(vts);
+        }
+
+        function verificar(){
+            alert("teste")
+            let n = parseInt(prompt("Digite um número:"));
+            for(i = 0; i < vts.length; i++ ){
+                if(vts[i] == n){
+                    vdd += 1;
+                    qnt += 1;
+                    alert(qnt);
+                }
+            }
+            if(vdd != 0){
+                alert("O número inserido existe, e apareceu " + qnt + " Vezes");
+            }
+            else{
+                alert("O número inserido não apareceu nenhuma vez: ");
+            }
+            qnt = 0;
+            vdd = 0;
+        }
+    </script>
+</body>
+</html>

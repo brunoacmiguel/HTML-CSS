@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vetor = [];
+        let palavra = prompt("Digite uma palavra: ").toUpperCase();
+        for(let i = 0; i <= palavra.length - 1; i++){
+            if(i % 2 == 0){
+                vetor.push(palavra[i]);
+            }
+        }
+        for(let i = 0; i <= palavra.length - 1; i++){
+            if(i % 2 != 0){
+                vetor.push(palavra[i]);
+            }
+        }
+        alert(vetor.join(""));
+    </script>
+</body>
+</html>

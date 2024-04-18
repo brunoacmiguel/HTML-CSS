@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Digite a senha: " id="medo">
+    <button onclick="vrf()">Clique</button>
+    <script>
+        /*
+        function vrf(){
+            let senha = prompt("DIgite a senha: ");
+            let tm = senha.length;
+            let mt = senha.match(/[A-Z]/g);
+            let tm2 = mt.length;
+            alert(tm2);
+            if(tm >= 8 && tm <= 15){
+                if(senha.match(/[0-9]/g) != null){
+                    if(senha.match(/[a-z]/g) != null){
+                        if(tm2 >= 2){
+                            if(senha.match(/\W/g) !== null){
+                                alert("Senha válida");
+                            }
+                        }
+                    }
+                }
+            }
+            else{
+            alert("Senha inválida");
+        }
+        }
+        */
+       function vrf(){
+        let senha = prompt("DIgite vossa senha: ");
+        if(senha.match(/\W|_/) != null){
+            alert("teste");
+        }
+       }
+        
+    </script>
+</body>
+</html>

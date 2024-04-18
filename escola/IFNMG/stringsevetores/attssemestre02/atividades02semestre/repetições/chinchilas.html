@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="chin" placeholder="Chinchilas">
+    <input type="text" id="n" placeholder="anos">
+    <button onclick="chinchas()">Clique</button>
+    <h3 id="mostrar"></h3>
+    <script>
+        function chinchas(){
+            let mostrar = "";
+            let chinchas = Number(document.getElementById("chin").value);
+            let soma = chinchas;
+            let n = Number(document.getElementById("n").value);
+            if(chinchas >= 2){
+                for(let i = 1; i <= n; i++){
+                    if(i == 1){
+                        mostrar += "Ano: " + i + " temos: " + soma + " chinchilas" + "<br>";
+                        document.getElementById("mostrar").innerHTML = mostrar;
+                    }
+                    else{
+                        soma *= 3;
+                        mostrar += "Ano " + i + " temos: " + soma + " chinchilas" + "<br>";
+                        document.getElementById("mostrar").innerHTML = mostrar; 
+                    }
+                    
+                }
+            }
+            else{
+                alert("Chinchilas insuficientes: ")
+            }
+            
+        }
+    </script>
+</body>
+</html>

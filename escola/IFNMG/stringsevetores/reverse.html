@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="puxar" placeholder="Diiigite com espaços">
+    <button id=""></button>
+    <button onclick="reverse()">Clique</button>
+    <button onclick="crescente()">Clique</button>
+    <h3 id="mostrar"></h3>
+    <script>
+        let vtr = [];
+        let mostrar = " ";
+        function reverse(){
+            let n = document.getElementById("puxar").value;
+            vtr = n.split(" ").map(Number);
+            vtr.reverse();
+            let tam = vtr.length;
+            for(i = 0; i < vtr.length; i++){
+                mostrar += i+1 + "°: " + vtr[i] + "<br>";
+                document.getElementById("mostrar").innerHTML = mostrar;
+            }
+        }
+       function crescente(){
+        let n = document.getElementById("puxar").value;
+        vtr = n.split(" ").map(Number);
+        vtr.sort(function(a, b){
+            return a - b;
+        })
+        for(i = 0; i < vtr.length; i++){
+            mostrar += i+1 + "°: " + vtr[i] + "<br>";
+            document.getElementById("mostrar").innerHTML = mostrar;
+        }
+       }
+    </script>
+</body>
+</html>

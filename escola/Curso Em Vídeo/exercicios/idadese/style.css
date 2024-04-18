@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(24, 113, 247);
+}
+
+header h1{
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 400px;
+    color: white;
+}
+
+section{
+    display: block;
+    margin: auto auto;
+    border: black solid 1px;
+    background-color: white;
+    
+    width: 400px;
+    border-radius: 10px;
+}
+div#def{
+    font-size: 30px;
+    text-align: center;
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img#foto{
+    display:block;
+    margin: auto;
+}

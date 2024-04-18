@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gerador de email institucional</h1>
+
+    <p>Apenas digite seu nome (sem apelidos viu)</p><input type="text" placeholder="Digite seu nome" id="condenaçao">
+    <button onclick="Gerador()">Gerar email institucional: </button>
+    <h3 id="mostrar"></h3>
+    <script>
+        function Gerador(){
+            let lista = []
+            let nome = document.getElementById("condenaçao").value;
+            lista.unshift(nome);
+            let n = nome.length;
+            let palavras = nome.split(" ");
+            let tam = palavras.length;
+            let p2 = palavras[1];
+            let mostrar = nome.charAt(0) + p2.charAt(0) + palavras[tam - 1] + "@empresa.com.br";
+            mostrar = mostrar.toLowerCase();
+            document.getElementById("mostrar").innerHTML = mostrar;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="preço" placeholder="Preço do quilo">
+    <input type="text" id="gramas" placeholder="Quantidade em gramas">
+    <button onclick="buffet()">Clique</button>
+    <script>
+        function buffet(){
+            let preço = Number(document.getElementById("preço").value);
+            let gramas = Number(document.getElementById("gramas").value);
+            let ppg = preço / 1000;
+            alert(ppg * gramas + " Reais");
+        }
+    </script>
+</body>
+</html>

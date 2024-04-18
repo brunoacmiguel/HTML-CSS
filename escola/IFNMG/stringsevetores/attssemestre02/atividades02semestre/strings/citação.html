@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="citaçao()">Clique</button>
+    <h3 id="mostrar"></h3>
+    <script>
+        function citaçao(){
+            let nome = prompt("Digite seu nome: ");
+            let frase = prompt("Diga uma frase de efeito: ")
+            let spl = nome.split(" ");
+            let mostrar = frase + ": " + spl[spl.length - 1] + " "+ spl[0] ;
+            document.getElementById("mostrar").textContent = mostrar; 
+        }
+    </script>
+</body>
+</html>

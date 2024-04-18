@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="clube" placeholder="Digite o nome do clube">
+    <button onclick="Adicionar()">Adicionar</button>
+    <button onclick="listar()">LIstar</button>
+    <button onclick="matamata()">Mata-Mata</button>
+    <h3 id="mostrar"></h3>
+    <script>
+        let mostrar = " ";
+        let lista = [];
+        cont = 0;
+        function listar(){
+            cont += 1;
+            let clube = document.getElementById("clube").value;
+            let clube2 = document.getElementById("clube").value;
+            lista.push(clube2);
+            mostrar += cont + "° " + clube + "<br>" ;
+            alert(clube);
+            alert(lista);
+            let tam = lista.length();
+            
+        }
+
+        function Adicionar(){
+            document.getElementById("mostrar").innerHTML = mostrar;
+            alert(lista.length);
+        }
+
+        function matamata(){
+            alert("Iniciando mata-mata");
+            alert("Número total de participantes: " + lista.length);
+
+        for (let i = 0; i < lista.length / 2; i++) {
+            alert("Confronto " + (i + 1));
+            
+            const participante1 = lista[i];
+            const participante2 = lista[lista.length - 1 - i];
+            
+            alert("Participante 1: " + participante1 + " | Participante 2: " + participante2);
+            }
+        }
+    </script>
+</body>
+</html>

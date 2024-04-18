@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        padding-right: 40px;
+    }
+    
+</style>
+<body>
+    <button onclick="cracha()">Gerar crachá</button>
+    <button onclick="crachaCaps()">Tudo maiúsculo</button>
+    <button onclick="limpar()">Limpar crachá</button>
+    <h3 id="gerador"><strong></strong></h3>
+    <script>
+       
+        let nome = prompt("Digite o seu nome: ")
+        let split = nome.split(" ");
+        let tam = split.length;
+        let mostrar = "Crachá: " + split[0] + " " + split[tam - 1];
+        function cracha(){
+            document.getElementById("gerador").innerHTML = mostrar;
+        }
+
+        function crachaCaps(){
+            mostrar = split[0] + " " + split[tam - 1];
+            mostrar = mostrar.toUpperCase()
+            document.getElementById("gerador").innerHTML = "Crachá:" + mostrar;
+            mostrar = "Crachá: " + split[0] + " " + split[tam - 1];
+        }
+
+        function limpar(){
+            document.getElementById("gerador").innerHTML = "";
+        }
+    
+    </script>
+</body>
+</html>

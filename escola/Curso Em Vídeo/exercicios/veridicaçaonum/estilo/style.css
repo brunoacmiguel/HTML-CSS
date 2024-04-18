@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: darkgray;
+}
+
+header{
+    margin: 0px;
+    padding: 40px;
+    background-color: black;
+}
+
+header h1{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-align: center;
+}
+
+
+
+main{
+    width: 500px;
+    background-color: bisque;
+    display: block;
+    margin: auto;
+    min-height: 400px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+

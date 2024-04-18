@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="vrf()">Clique</button>
+    <script>
+        let vrf1= 0;
+        function vrf(){
+            let n = prompt("Digite números (separados por espaços seu comunista)");
+            let splt = n.split(" ").map(Number);
+            alert("teste");
+            for(let i = 0; i <= splt.length - 1; i ++){
+                if(splt[i] > splt[i - 1]|| i == 0){
+                    vrf1 += 0;
+                }
+                else{
+                    vrf1 += 1;
+                }
+            }
+         if(vrf1 == 0){
+            alert(splt.join(" - "));
+            alert("Está em ordem crescente");
+        }
+        else{
+            alert(splt.join(" - "));
+            alert("Está em ordem decrescente")
+        }
+        }
+        
+
+
+
+
+    </script>
+</body>
+</html>

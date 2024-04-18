@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Consultório arranca dentes</h1>
+    <hr>
+    <p>Paciente:</p>
+    <input type="text" id="pac" placeholder="paciente">
+    <button onclick="espera()">Espera</button>
+    <button onclick="atendimento()">Atender</button>
+    <button onclick="urgencia()">Urgência</button>
+    <button onclick="limpar()">Limpar h3</button>
+    <h3 id="err"></h3>
+    <h1>Em atendimento</h1>
+    <h3 id="atd"></h3>
+    <h1>Em espera</h1>
+    <h3 id="espera"><strong></strong></h3>
+    <script>
+        let mostrar = "";
+        let vtes = [];
+        let vten = [];
+        let vtur = [];
+        let ct1 = 0;
+        let ct2 = 0;
+        function espera(){
+            let espera = document.getElementById("pac").value;
+            vtes.push(espera);
+            mostrar += (ct1 + 1) + "°: " + vtes[ct1] + "<br>";
+            document.getElementById("espera").innerHTML = mostrar;
+            ct1 += 1;
+        }
+        let mostrar1 = "";
+        function atendimento(){
+            mostrar1 = "";
+            vten.push(vtes[0])
+            if(vten.length > 1){
+                vten.shift();
+            }
+            vtes.shift();
+            alert(vten[0]);
+            mostrar1 += vten[0];
+            document.getElementById("atd").innerHTML = mostrar1;
+        }
+        let mostrar2 = "";
+        function urgencia(){
+            vtur.push(vten[0]);
+            if(vtur.length > 1){
+                vtur.shift();
+            }
+            alert(vtur[0]);
+            mostrar2 = vtur[0];
+            document.getElementById("err").innerHTML= mostrar2;
+        }
+        
+        function limpar(){
+            document.getElementById("atd").innerHTML = " ";
+        }
+    </script>
+</body>
+</html>

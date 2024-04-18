@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Video Locadora</h1>
+    <input type="text" id="nome" placeholder="Digite o nome do filme">
+    <input type="text" id="duraçao" placeholder="Duração do filme">
+    <button onclick="loc()">Clique</button>
+    <h3 id="mostrar"></h3>
+    <script>
+        function loc(){
+            let nome = document.getElementById("nome").value;
+            let duraçao = document.getElementById("duraçao").value;
+            parseInt(duraçao);
+            let int = duraçao / 60;
+            let flo = duraçao % 60;
+            document.getElementById("mostrar").innerHTML = Math.floor(int) + "h" + flo + "minutos"
+        }
+        
+    </script>
+</body>
+</html>

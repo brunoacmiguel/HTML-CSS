@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="medo()">Clique</button>
+    <script>
+        function medo(){
+            let palavra = prompt("Digite uma palavra").toUpperCase();
+            let rev = prompt("Letra a ser substituida: ").toUpperCase();
+            let sub = prompt("Por qual letra você quer substituir? ").toUpperCase();
+            let revex = new RegExp(rev, "g");
+            alert(revex);
+            let repla = palavra.replace(revex, sub);
+            
+            alert(repla);
+        }
+    </script>
+</body>
+</html>

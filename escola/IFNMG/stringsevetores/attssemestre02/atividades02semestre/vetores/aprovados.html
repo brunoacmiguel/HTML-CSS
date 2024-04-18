@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="pessoa" placeholder="Pessoa">
+    <input type="text" id="nota" placeholder="nota">
+    <button onclick="armazenar()">Armazenar</button>
+    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="limpar()">Limpar</button>
+    <h3 id="mostrar"></h3>
+    <script>
+        let mostrar1 = "";
+        let vp = [];
+        let vn = [];
+        function armazenar(){
+            let pessoa = document.getElementById("pessoa").value;
+            let nota = document.getElementById("nota").value;
+            parseInt(nota);
+            vp.push(pessoa);
+            vn.push(nota);
+        }
+        function mostrar(){
+            mostrar1 = "";
+            for(let i = 0; i <= vn.length - 1; i++){
+                if(vn[i] >= 40){
+                    mostrar1 += vp[i] + ": " + vn[i] + "<br>";
+                    document.getElementById("mostrar").innerHTML = mostrar1;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

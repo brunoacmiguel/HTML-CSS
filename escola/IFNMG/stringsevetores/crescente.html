@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="receba" placeholder="digite os números">
+    <button onclick="ordem()">Clique</button>
+    <h3 id="mostrar"></h3>
+    <script>
+        let vtr = [];
+        let mostrar = " ";
+
+        function ordem(){
+            let n = document.getElementById("receba").value;
+            let vtr = n.split(" ").map(Number);
+            vtr.sort(function (a, b){
+                return a - b;
+            });
+            for(i = 0; i < vtr.length; i++){
+                mostrar += i+1 + "°: " + vtr[i] + "<br>";
+                document.getElementById("mostrar").innerHTML = mostrar; 
+            }
+        }
+        vtr = [];
+    </script>
+</body>
+</html>

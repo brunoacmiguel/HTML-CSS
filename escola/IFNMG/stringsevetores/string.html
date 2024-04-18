@@ -1,0 +1,11 @@
+<script>
+    var frase = prompt("Digite o anúncio: ");
+    var tam = frase.length;
+    var frasenum = 0;
+    for(var i = 0; i < tam; i++){
+        if(frase.charAt(i) == " "){
+            frasenum ++;
+        }
+    }
+    alert("O número de palavras é: " + (frasenum + 1));
+</script>

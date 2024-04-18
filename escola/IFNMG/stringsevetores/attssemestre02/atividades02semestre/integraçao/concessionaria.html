@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Concessionária de carro roubado</h1>
+    <input type="text" id="nome" placeholder="Nome do carro">
+    <input type="text" id="preço" placeholder="Preço do carro">
+    <button onclick="entrada()">Valores</button>
+    <h3 id="mostrar1"></h3>
+    <h3 id="mostrar2"></h3>
+    <h3 id="mostrar3"></h3>
+    <script>
+        function entrada(){
+            let nome = document.getElementById("nome").value;
+            let preço = Number(document.getElementById("preço").value);
+            document.getElementById("mostrar1").innerHTML = "Promoção: " + nome;
+            document.getElementById("mostrar2").innerHTML = "Entrada de: R$" + preço / 2;
+            document.getElementById("mostrar3").innerHTML = "Parcelamento de: R$" + ((preço / 2) / 12) .toFixed(2) + " Em 12x sem juros!";
+        }
+        
+    </script>
+</body>
+</html>
